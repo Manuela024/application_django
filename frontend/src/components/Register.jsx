@@ -68,10 +68,10 @@ const Register = () => {
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
           <div className="mx-auto h-20 w-20 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 transform -rotate-6 shadow-2xl">
-            <span className="text-white text-2xl font-bold">🚀</span>
+            <span className="text-white text-2xl font-bold"></span>
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-2 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-            Rejoignez-nous
+            INSCRIPTION
           </h2>
           <p className="text-gray-600 text-lg">Créez votre compte en quelques secondes</p>
         </div>

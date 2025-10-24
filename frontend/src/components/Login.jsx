@@ -48,7 +48,7 @@ const Login = () => {
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
           <div className="mx-auto h-20 w-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 transform rotate-6 shadow-2xl">
-            <span className="text-white text-2xl font-bold">⚡</span>
+            <span className="text-white text-2xl font-bold"></span>
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Content de vous revoir
@@ -111,13 +111,20 @@ const Login = () => {
                 S'inscrire
               </Link>
             </div>
-
-            <div className="text-center text-sm text-gray-500 bg-yellow-50 p-3 rounded-lg border border-yellow-200">
+<div className="text-center">
+  <Link 
+    to="/forgot-password" 
+    className="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200"
+  >
+    Mot de passe oublié ?
+  </Link>
+</div>
+            {/* <div className="text-center text-sm text-gray-500 bg-yellow-50 p-3 rounded-lg border border-yellow-200">
               <strong>Compte Admin :</strong><br />
               Email: <strong>admin@example.com</strong><br />
               Username: <strong>admin</strong><br />
               Mot de passe: <strong>n'importe lequel</strong>
-            </div>
+            </div> */}
           </form>
         </div>
       </div>
@@ -126,3 +133,4 @@ const Login = () => {
 }
 
 export default Login
+

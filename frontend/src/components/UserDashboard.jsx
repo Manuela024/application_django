@@ -68,7 +68,7 @@ const UserDashboard = () => {
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl mb-4 shadow-2xl">
-            <span className="text-white text-2xl">👤</span>
+            <span className="text-white text-2xl"> </span>
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-2 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Mon Tableau de Bord
@@ -106,6 +106,13 @@ const UserDashboard = () => {
               </div>
 
               <div className="space-y-3">
+                  <button
+    onClick={() => window.location.href = '/change-password'}
+    className="w-full bg-white text-blue-600 border border-blue-200 hover:bg-blue-50 font-medium py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
+  >
+    Changer le mot de passe
+  </button>
+
                 {!isEditing ? (
                   <button
                     onClick={startEditing}
@@ -116,7 +123,7 @@ const UserDashboard = () => {
                 ) : (
                   <div className="space-y-3">
                     <button
-                      type="submit"
+                      type="submit"                              
                       form="profile-form"
                       disabled={loading}
                       className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-medium py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl disabled:opacity-50"

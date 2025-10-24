@@ -113,3 +113,18 @@ ADMIN_EMAIL = 'adouemmanuela@gmail.com'
 
 # Spécifier le modèle User personnalisé
 AUTH_USER_MODEL = 'users.CustomUser'
+
+
+# Nouveau
+# Configuration Email
+# ⭐ CONFIGURATION GMAIL QUI FONCTIONNE ⭐
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'adouemmanuela05@gmail.com'  # Ton email
+EMAIL_HOST_PASSWORD = 'ouuntocodvjnogvw'  # ⭐ COLLE LE MOT DE PASSE ICI (16 caractères)
+DEFAULT_FROM_EMAIL = 'adouemmanuela05@gmail.com'
+
+# ⭐ IMPORTANT : Pour les caractères
+DEFAULT_CHARSET = 'utf-8'
